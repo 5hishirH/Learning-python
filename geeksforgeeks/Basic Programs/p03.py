@@ -1,13 +1,16 @@
 # A python program for factorial of a number
 
-def factorial(num):
-    i = 1
+def factorial(n):
     fact = 1
-    while i <= num:
-        fact*= i
-        i+= 1
+    while (n > 1):
+        fact*= n
+        n-= 1
     
     return fact
 
-number = int(input("Enter a number : "))
-print(str(number) + "! =", factorial(number))
+num = int(input("Enter a number : "))
+print(str(num) + "! =", factorial(num))
+
+# can be done : 
+# import math
+# math.factorial(num)
