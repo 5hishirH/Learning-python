@@ -1,7 +1,10 @@
-# Ten minute walk
-def is_valid_walk(walk):
-    return len(walk) == 10 and walk.count('n') == walk.count('s') and walk.count('w') == walk.count('e')
+# is isogram
+def is_isogram(string):
+    #convert the string into a list
+    lst = list(string.lower())
 
-# driver code
-lst = ['n','s','n','s','n','s','n','s','n','s']
-print(is_valid_walk(lst))
+    # check frequency of each element in the list
+    for i in lst:
+        if lst.count(i) > 1:
+            return False
+    return True
