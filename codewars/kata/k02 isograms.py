@@ -1,0 +1,7 @@
+# Ten minute walk
+def is_valid_walk(walk):
+    return len(walk) == 10 and walk.count('n') == walk.count('s') and walk.count('w') == walk.count('e')
+
+# driver code
+lst = ['n','s','n','s','n','s','n','s','n','s']
+print(is_valid_walk(lst))
