@@ -1,8 +1,8 @@
 # A difference function, which subtracts one list from another and returns the result.
 def array_diff(a, b):
-    for i in b:
-        for j in range(a.count(i)):
-            a.remove(i)
+    for ele in b:
+        while ele in a:
+            a.remove(ele)
 
     return a
 
